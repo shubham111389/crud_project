@@ -1,0 +1,90 @@
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  font-family: Arial, sans-serif;
+  background: #f4f4f4;
+}
+
+.app {
+  padding: 24px;
+}
+
+.container {
+  max-width: 800px;
+  margin: 0 auto;
+  background: #ffffff;
+  padding: 24px;
+  border-radius: 10px;
+}
+
+.form {
+  display: grid;
+  gap: 12px;
+  margin-bottom: 20px;
+}
+
+input {
+  padding: 10px 12px;
+  border: 1px solid #cccccc;
+  border-radius: 6px;
+}
+
+button {
+  padding: 10px 14px;
+  border: none;
+  border-radius: 6px;
+  background: #2563eb;
+  color: #ffffff;
+  cursor: pointer;
+}
+
+.secondary {
+  background: #6b7280;
+}
+
+.danger {
+  background: #dc2626;
+}
+
+.actions {
+  display: flex;
+  gap: 10px;
+}
+
+.listHeader {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 14px;
+}
+
+.list {
+  display: grid;
+  gap: 12px;
+}
+
+.card {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  border: 1px solid #e5e7eb;
+  border-radius: 8px;
+  padding: 14px;
+}
+
+.card p,
+.message {
+  margin: 6px 0 0;
+}
+
+@media (max-width: 640px) {
+  .card,
+  .actions,
+  .listHeader {
+    flex-direction: column;
+    align-items: stretch;
+  }
+}
