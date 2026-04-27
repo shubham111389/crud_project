@@ -5,6 +5,8 @@ const userRoutes = require("./routes/user.routes");
 
 const app = express();
 
+app.use( express.static("public"));
+
 app.use(
   cors({
     origin: process.env.CLIENT_URL || "*"
